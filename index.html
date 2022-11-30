@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bio Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Bio Registration Form</h1>
+    <p id="description">Please fill out the following information to sign up:</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter you name..." required></input></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter you email..." required></input></label>
+        <label id="number-label">Student id: <input id="number" type="number" min="10000" max="20000" placeholder="Enter your student id..."></input></label>
+        <label>Undergrad or Graduate: <select id="dropdown">
+          <option value="0">Select one</option>
+          <option value="1">Undergrad</option>
+          <option value="1">Graduate</option>
+        </select></label>
+      </fieldset>
+      <fieldset>
+        <label for="wetlab">Role:
+        <br></br><input id="wetlab" type="radio" name="role" value="wetlab" class="inline" /> Wetlab</label>
+        <label for="research"><input id="research" type="radio" name="role" value="research" class="inline" /> Research</label>
+        <br><label for="interests" name="interests"> Areas of interest:
+          <br></br><input id="Biotech" type="checkbox" required value="Biotech" class="inline" />Biotech
+          <input id="computer-science" type="checkbox" required value="computer-science" class="inline" />Computer Science
+          <input id="nanotech" type="checkbox" required value="nanotech" class="inline" />Nanotech
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Additional Comments:
+          <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Additional comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
